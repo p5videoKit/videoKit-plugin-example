@@ -1,8 +1,7 @@
 //
 // eff_simplex
 
-// export default
-class eff_simplex {
+export default class eff_simplex {
   static meta_props = [
     //
     { prop: 'uwidth', label: 'width', selection: [106, 100, 200, 300] },
@@ -22,8 +21,8 @@ class eff_simplex {
   }
 
   initGraphics() {
-    let w = this.uwidth;
-    let h = this.uheight;
+    let w = this.uwidth || 106;
+    let h = this.uheight || 60;
     this.output = createGraphics(w, h);
     // this.output = createGraphics(106, 60);
     console.log('eff_worley initGraphics width, height', width, height);

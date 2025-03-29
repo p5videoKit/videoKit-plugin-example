@@ -95,4 +95,12 @@ function photo_index_increment() {
   my.dbase.update_item('item', { photo_index: my.dbase.increment(1) });
 }
 
-//
+// --
+
+function ui_log(...args) {
+  console.log(...args);
+}
+
+function ui_verbose(...args) {
+  // console.log(...args);
+}

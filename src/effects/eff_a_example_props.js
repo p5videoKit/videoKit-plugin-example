@@ -2,8 +2,8 @@
 // eff_a_example_props
 //  example of effect properties for videoKit dashboard
 
-// export default class eff_a_example_props {
-class eff_a_example_props {
+export default class eff_a_example_props {
+  // class eff_a_example_props {
   static meta_props = [
     //
     // meta_props

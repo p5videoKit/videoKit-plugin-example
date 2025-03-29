@@ -5,6 +5,8 @@ function videoKit_setup() {
   videoKit = p5videoKit_init(videoKit_config);
 
   videoKit.save_canvas_handler = save_canvas_handler;
+
+  videoKit.import_effect_handler = import_effect_handler;
 }
 
 let videoKit_config = {
@@ -21,13 +23,9 @@ let videoKit_config = {
   // you could add some more !!!!
 
   effects: [
-    { label: 'a_example_props', factory: eff_a_example_props },
-    { label: 'eff_simplex', factory: eff_simplex },
-    { label: 'eff_worley', factory: eff_worley },
-
-    // { label: 'a_example_props', import_path: 'effects/eff_a_example_props.js' },
-    // { label: 'eff_simplex', import_path: 'effects/eff_simplex.js' },
-    // { label: 'eff_worley', import_path: 'effects/eff_worley.js' },
+    { label: 'a_example_props', import_path: 'effects/eff_a_example_props.js' },
+    { label: 'eff_simplex', import_path: 'effects/eff_simplex.js' },
+    { label: 'eff_worley', import_path: 'effects/eff_worley.js' },
   ],
 
   // settings for import, will appear in the settings menu
@@ -39,10 +37,6 @@ let videoKit_config = {
   settings: [{ label: 'videoKit', import_path: 'settings/videoKit.json' }],
 };
 
-function ui_log(...args) {
-  console.log(...args);
-}
-
-function ui_verbose(...args) {
-  // console.log(...args);
+function import_effect_handler(effMeta) {
+  return import('./' + effMeta.import_path);
 }

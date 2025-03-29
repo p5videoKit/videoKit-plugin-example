@@ -1,8 +1,7 @@
 //
 // eff_worley
 
-// export default
-class eff_worley {
+export default class eff_worley {
   static meta_props = [
     //
     { prop: 'num_prop', label: 'prop1', selection: [100, 200, 300, 400] },
