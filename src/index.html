@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>?=v1 videoKit-plugin-eg</title>
+    <title>?v=2 videoKit-plugin-example</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <!-- p5.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script> -->
+
+    <!-- videoKit library -->
+    <script type="module" src="https://unpkg.com/p5-video-kit@0.0.10/dist/p5videoKit.esm.js"></script>
+
+    <!-- firebase cloud services library -->
+    <script type="module" src="https://unpkg.com/itp-molib@0.2.16/dist/moLib.esm.js"></script>
+
+    <!-- other libraries that may be needed by videoKit effect -->
+    <!-- eg posenet -->
+    <!-- <script src="https://p5livemedia.itp.io/simplepeer.min.js"></script>
+    <script src=" https://p5livemedia.itp.io/socket.io.js"></script>
+    <script src=" https://p5livemedia.itp.io/p5livemedia.js"></script>
+    <script src=" https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script> -->
 
     <script>
       // track startup time for debugging
@@ -13,20 +28,10 @@
     </script>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <meta charset="utf-8" />
   </head>
 
   <body>
-    <!-- this is an include for the videoKit lbrary  -->
-    <!-- included the local version or from web -->
-    <!-- <script type="module" src="./videoKit/a/a_lib.js"></script> -->
-    <script type="module" src="https://unpkg.com/p5-video-kit@0.0.7/dist/p5videoKit.esm.js"></script>
-
-    <!-- firebase cloud services library -->
-    <script type="module" src="https://unpkg.com/itp-molib@0.2.16/dist/moLib.esm.js"></script>
-
     <script src="effects/eff_a_example_props.js"></script>
-    <!-- <script type="module" src="effects/eff_a_example_props.js"></script> -->
     <script src="effects/eff_simplex.js"></script>
     <script src="effects/eff_worley.js"></script>
 

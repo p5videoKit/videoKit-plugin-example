@@ -5,8 +5,6 @@ function videoKit_setup() {
   videoKit = p5videoKit_init(videoKit_config);
 
   videoKit.save_canvas_handler = save_canvas_handler;
-
-  // videoKit.import_effect = import_effect;
 }
 
 let videoKit_config = {

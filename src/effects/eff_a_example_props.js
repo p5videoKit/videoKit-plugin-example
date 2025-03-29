@@ -2,7 +2,7 @@
 // eff_a_example_props
 //  example of effect properties for videoKit dashboard
 
-// export default class eff_a_example_props
+// export default class eff_a_example_props {
 class eff_a_example_props {
   static meta_props = [
     //
@@ -76,7 +76,7 @@ class eff_a_example_props {
       this.xpos += this.xspeed * 0.005;
       this.ypos += this.yspeed * 0.005;
       let wh = width * 0.5;
-      let hh = height * 0.75;
+      let hh = height * 0.5;
       let x = Math.floor(wh + Math.sin(this.xpos) * wh);
       let y = Math.floor(hh + Math.sin(this.ypos) * hh);
       output.circle(x, y, this.num_prop);
@@ -84,6 +84,6 @@ class eff_a_example_props {
   }
 }
 
-// to support
+// to support module include
 // globalThis.eff_a_example_props = eff_a_example_props;
 // console.log('eff_a_example_props globalThis', globalThis);
