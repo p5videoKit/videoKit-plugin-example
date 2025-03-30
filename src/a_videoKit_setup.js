@@ -4,9 +4,11 @@ function videoKit_setup() {
   //
   videoKit = p5videoKit_init(videoKit_config);
 
+  // handler to save canvas to server
   videoKit.save_canvas_handler = save_canvas_handler;
 
-  videoKit.import_effect_handler = import_effect_handler;
+  // handler to tell videoKit where to find effects
+  videoKit.import_effect_handler = (effMeta) => import('./' + effMeta.import_path);
 }
 
 let videoKit_config = {
@@ -36,7 +38,3 @@ let videoKit_config = {
 
   settings: [{ label: 'videoKit', import_path: 'settings/videoKit.json' }],
 };
-
-function import_effect_handler(effMeta) {
-  return import('./' + effMeta.import_path);
-}
