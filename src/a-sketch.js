@@ -1,18 +1,20 @@
 // p5LiveVideo example dashboard
 // https://github.com/jht1493/p5videoKit
 //
-let videoKit; // home for library routines
 
-p5.disableFriendlyErrors = true; // disables FES to improve performance
+// home for library routines
+let videoKit;
 
+// setup_dbase state for moLib
 let my = {};
-globalThis.my = my;
 
 function setup() {
   // Report startup time for debugging
   let lapse = window.performance.now() - a_start_now;
   console.log('setup lapse', lapse);
   // indicate how long it took to load everything
+
+  p5.disableFriendlyErrors = true; // disables FES to improve performance
 
   // Lowest pixel density for performance
   pixelDensity(1);

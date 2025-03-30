@@ -25,9 +25,9 @@ let videoKit_config = {
   // you could add some more !!!!
 
   effects: [
-    { label: 'a_example_props', import_path: 'effects/eff_a_example_props.js' },
-    { label: 'eff_simplex', import_path: 'effects/eff_simplex.js' },
-    { label: 'eff_worley', import_path: 'effects/eff_worley.js' },
+    { label: 'example_props', import_path: 'effects/eff_example_props.js' },
+    { label: 'simplex', import_path: 'effects/eff_simplex.js' },
+    { label: 'worley', import_path: 'effects/eff_worley.js' },
   ],
 
   // settings for import, will appear in the settings menu
@@ -36,5 +36,8 @@ let videoKit_config = {
   // for all the settings associated with the effect
   // "settings" is an array of
 
-  settings: [{ label: 'videoKit', import_path: 'settings/videoKit.json' }],
+  settings: [
+    { label: 'example_props', import_path: 'settings/example_props.json' },
+    { label: 'simplex_speed_1', import_path: 'settings/simplex_speed_1.json' },
+  ],
 };
