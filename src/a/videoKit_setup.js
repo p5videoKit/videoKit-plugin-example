@@ -8,7 +8,7 @@ function videoKit_setup() {
   videoKit.save_canvas_handler = save_canvas_handler;
 
   // handler to tell videoKit where to find effects
-  videoKit.import_effect_handler = (effMeta) => import('./' + effMeta.import_path);
+  videoKit.import_effect_handler = (effMeta) => import('../' + effMeta.import_path);
 }
 
 let videoKit_config = {
