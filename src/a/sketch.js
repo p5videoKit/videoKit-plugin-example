@@ -1,7 +1,3 @@
-// p5LiveVideo example dashboard
-// https://github.com/jht1493/p5videoKit
-//
-
 // home for library routines
 let videoKit;
 
@@ -38,3 +34,7 @@ function draw() {
 // https://editor.p5js.org/shawn/sketches/jZQ64AMJc
 // p5LiveMedia Test Video
 // https://github.com/vanevery/p5LiveMedia
+
+// p5LiveVideo example dashboard
+// https://github.com/jht1493/p5videoKit
+//

@@ -40,4 +40,6 @@ let videoKit_config = {
     { label: 'example_props', import_path: 'settings/example_props.json' },
     { label: 'simplex_speed_1', import_path: 'settings/simplex_speed_1.json' },
   ],
+
+  videos: [],
 };
