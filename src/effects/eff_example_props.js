@@ -16,7 +16,7 @@ export default class eff_example_props {
     //
     { prop: 'num_prop', label: 'prop1', selection: [100, 200, 300, 400] },
     { prop: 'str_prop2', label: 'prop2', selection: ['red', 'green', 'yellow'] },
-    { prop: 'textInput_prop', label: 'text1', textInput: 'Hello world!', style: 'width:40%', br: 1 },
+    { prop: 'textInput_prop', label: 'text1', textInput: 'Hello IMS Class!', style: 'width:40%', br: 1 },
     // br: 1 creates a line break
     { prop: 'slider1_prop', label: 'slider1', slider: { min: 0, max: 8 }, style: 'width:20%', br: 1 },
     // line break
