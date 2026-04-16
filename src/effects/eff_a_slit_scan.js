@@ -35,13 +35,12 @@ export default class eff_a_slit_scan {
     this.period_timer = new this.videoKit.PeriodTimer(this.period);
   }
   prepareOutput() {
-    // this.input.loadPixels();
-    if (!this.input || !this.input.width || !this.input.height) {
-      console.log('eff_a_slit_scan prepareOutput bad input', input);
-      return;
-    }
-    console.log('eff_a_slit_scan prepareOutput output', this.output);
-
+    // if (!this.input || !this.input.width || !this.input.height) {
+    //   console.log('eff_a_slit_scan prepareOutput bad input', input);
+    //   return;
+    // }
+    // console.log('eff_a_slit_scan prepareOutput output', this.output);
+    this.input.loadPixels();
     this.output.copy(this.input, this.vw / 2, 0, 1, this.vh, this.x, 0, 1, this.vh);
     this.x = this.x + this.step;
     if (this.x > this.output.width) {
@@ -96,3 +95,21 @@ and create you own version of the effect
 //     x = 0;
 //   }
 // }
+
+/*
+# --
+2026-04-16 16:57:33
+Fixed with input.loadPixels call before output.copy()
+-- fails on 
+  p5.js/1.11.1/
+  1.9.0 
+-- ok on
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.min.js"></script>
+https://github.com/processing/p5.js/releases/tag/v1.9.0
+https://github.com/processing/p5.js/releases/tag/v1.8.0
+
+this.output.copy(this.input, this.vw / 2, 0,  1,  this.vh, this.x, 0,  1,  this.vh);
+                  srcImage, sx,           sy, sw, sh,      dx,     dy, dw, dh)
+copy(srcImage, sx, sy, sw, sh, dx, dy, dw, dh)
+copy(sx, sy, sw, sh, dx, dy, dw, dh)
+*/
