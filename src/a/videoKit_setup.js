@@ -25,7 +25,8 @@ let videoKit_config = {
   // you could add some more !!!!
 
   effects: [
-    { label: 'eff_a_slit_scan', import_path: 'effects/eff_a_slit_scan.js' },
+    { label: 'eff_shader_clamp', import_path: 'effects/eff_shader_clamp.js' },
+    { label: 'eff_slit_scan', import_path: 'effects/eff_slit_scan.js' },
     { label: 'example_props', import_path: 'effects/eff_example_props.js' },
     { label: 'simplex', import_path: 'effects/eff_simplex.js' },
     { label: 'worley', import_path: 'effects/eff_worley.js' },

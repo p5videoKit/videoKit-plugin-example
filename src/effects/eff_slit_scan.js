@@ -7,7 +7,7 @@
 // you just have to select the drop-downs
 // save a json with your selections
 
-export default class eff_a_slit_scan {
+export default class eff_slit_scan {
   static meta_props = [
     // { prop: 'num_prop', label: 'prop1', selection: [0, 1] },
     { prop: 'expand', selection: [1, 2, 3] },
@@ -35,10 +35,6 @@ export default class eff_a_slit_scan {
     this.period_timer = new this.videoKit.PeriodTimer(this.period);
   }
   prepareOutput() {
-    // if (!this.input || !this.input.width || !this.input.height) {
-    //   console.log('eff_a_slit_scan prepareOutput bad input', input);
-    //   return;
-    // }
     // console.log('eff_a_slit_scan prepareOutput output', this.output);
     this.input.loadPixels();
     this.output.copy(this.input, this.vw / 2, 0, 1, this.vh, this.x, 0, 1, this.vh);
