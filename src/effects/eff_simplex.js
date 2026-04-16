@@ -55,3 +55,10 @@ export default class eff_simplex {
     this.zoff += this.incrementZ;
   }
 }
+
+// Fixed https://github.com/p5videoKit/videoKit-plugin-example/issues/1
+// p5js script links are missing for example effects #1
+
+// src/effects/OpenSimplex-Noise/sketch.js
+// https://editor.p5js.org/jht9629-gmail/sketches/ScCMFzWqR
+// OpenSimplex Noise -- fullScreen

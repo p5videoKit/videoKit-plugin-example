@@ -60,11 +60,9 @@ export default class eff_worley {
           distances[i] = d;
         }
         let sorted = sort(distances);
-
         // let r = map(sorted[0], 0, 150, 0, 255);
         // let g = map(sorted[1], 0, 50, 255, 0);
         // let b = map(sorted[2], 0, 200, 255, 0);
-
         // bright heart
         let r = map(sorted[0], 0, 50, 0, 255);
         let g = map(sorted[1], 0, 50, 0, 255);
@@ -80,3 +78,7 @@ export default class eff_worley {
     layer.updatePixels();
   }
 }
+
+// src/effects/Worley-Noise-Port/sketch.js
+// https://editor.p5js.org/jht9629-nyu/sketches/O91vtOED4
+// Worley Noise frameIndex bounce
