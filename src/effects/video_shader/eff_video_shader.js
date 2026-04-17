@@ -4,18 +4,18 @@ import a_frag from './shader_effect_frag.js';
 
 export default class eff_video_shader {
   static meta_props = [
-    { rop: 'window_left', label: 'window_left', slider: { min: 0, max: 1 }, style: 'width:20%', default: 0.4 },
+    { prop: 'window_left', label: 'window_left', slider: { min: 0, max: 1 }, style: 'width:20%', default: 0.4 },
     { prop: 'window_right', label: 'right', slider: { min: 0, max: 1 }, style: 'width:20%', default: 0.6, br: 1 },
     { prop: 'window_top', label: 'window_top', slider: { min: 0, max: 1 }, style: 'width:20%', default: 0.4 },
     { prop: 'window_bottom', label: 'bottom', slider: { min: 0, max: 1 }, style: 'width:20%', default: 0.6, br: 1 },
   ];
   constructor(props) {
     Object.assign(this, props);
-    // console.log('eff_shader_clamp props', props);
+    // console.log('eff_video_shader props', props);
     this.init();
   }
   prepareOutput() {
-    // console.log('eff_shader_clamp prepareOutput');
+    // console.log('eff_video_shader prepareOutput');
     this.output.shader(this.aShader);
 
     // passing cam as a texture

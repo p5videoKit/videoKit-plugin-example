@@ -10,7 +10,6 @@ varying vec2 vTexCoord;
 // our texture coming from p5
 uniform sampler2D tex0;
 uniform vec2 texelSize;
-//uniform float u_time;
 
 uniform float window_left;
 uniform float window_right;
