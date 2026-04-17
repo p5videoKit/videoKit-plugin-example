@@ -1,6 +1,6 @@
 # [videoKit-plugin-example](https://github.com/p5videoKit/videoKit-plugin-example.git)
 
-- p5videoKit plug in example using unpkg.com/p5-video-kit
+- p5videoKit plug in example using unpkg.com/p5-video-kit library
 
 - [index ?v=3](src/index.html?v=3)
   - ?v=3 to force page reload
