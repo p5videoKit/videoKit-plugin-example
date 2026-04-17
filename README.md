@@ -2,8 +2,8 @@
 
 - p5videoKit plug in example using unpkg.com/p5-video-kit
 
-- [index ?v=2](src/index.html?v=2)
-  - ?v=2 to force page reload
+- [index ?v=3](src/index.html?v=3)
+  - ?v=3 to force page reload
 
 - [firebase storage console from github pages](https://console.firebase.google.com/project/molab-485f5/storage/molab-485f5.appspot.com/files/~2Fm0-@r-@w-~2Fmo-example~2Fm0-example~2FgKH9MHx7SXbJ9VHfOcjQamzHxXh2)
 
