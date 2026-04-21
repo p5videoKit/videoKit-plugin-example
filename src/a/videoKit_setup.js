@@ -42,6 +42,7 @@ let videoKit_config = {
   settings: [
     { label: 'example_props', import_path: 'settings/example_props.json' },
     { label: 'simplex_speed_1', import_path: 'settings/simplex_speed_1.json' },
+    { label: 'circle4', import_path: 'settings/circle4.json' },
   ],
 
   videos: [],
