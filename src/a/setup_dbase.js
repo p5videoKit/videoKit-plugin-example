@@ -50,7 +50,7 @@ async function save_canvas_handler() {
 }
 
 async function add_photo(layer) {
-  console.log('add_photo my', my);
+  // console.log('add_photo my', my);
   // console.log('add_photo my.dbase', my.dbase);
 
   // { name, index, uid, date }
@@ -63,6 +63,8 @@ async function add_photo(layer) {
 
   let path = photo_path_entry(entry);
   my.dbase.update_item('photo_store/' + key, { path });
+
+  console.log('add_photo path', path);
 
   let imageQuality = my.imageQuality;
   try {
