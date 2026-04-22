@@ -1,3 +1,4 @@
+//
 // converting video slit scan to a effect pluging example
 //
 // effects have to be declared as a class
@@ -48,8 +49,6 @@ export default class eff_slit_scan {
   }
 }
 
-// https://editor.p5js.org/jht9629-nyu/sketches/hw8qkUuAw
-// https://editor.p5js.org/codingtrain/sketches/B1L5j8uk4
 /*
 Slit Scan
 this is original code that would work in p5js editor
@@ -109,3 +108,6 @@ this.output.copy(this.input, this.vw / 2, 0,  1,  this.vh, this.x, 0,  1,  this.
 copy(srcImage, sx, sy, sw, sh, dx, dy, dw, dh)
 copy(sx, sy, sw, sh, dx, dy, dw, dh)
 */
+
+// https://editor.p5js.org/jht9629-nyu/sketches/hw8qkUuAw
+// https://editor.p5js.org/codingtrain/sketches/B1L5j8uk4
