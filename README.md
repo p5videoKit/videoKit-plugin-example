@@ -2,6 +2,8 @@
 
 - p5videoKit plug in example using unpkg.com/p5-video-kit library
 
+- [pages](https://p5videokit.github.io/videoKit-plugin-example/)
+
 save button upload to firebase cloud storage
 
 - [index ?v=4](src/index.html?v=4)
